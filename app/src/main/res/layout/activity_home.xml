@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityHome">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_185sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_185sdp"
+            android:src="@drawable/image"
+            android:scaleType="centerCrop"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Location"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginStart="@dimen/_20sdp"/>
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down"
+                app:tint="#ffffff"
+                android:layout_marginTop="-3dp"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"
+                app:tint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York City"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_marginStart="@dimen/_215sdp"
+            android:layout_marginTop="@dimen/_25sdp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification"
+            android:layout_marginStart="@dimen/_255sdp"
+            android:layout_marginTop="@dimen/_25sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provide the best \nfood for you"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="32dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="@dimen/_100sdp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find by Category"
+            android:textSize="16dp"
+            android:textColor="#101010"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginStart="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textSize="14dp"
+            android:textColor="#FE8C00"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginStart="@dimen/_115sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

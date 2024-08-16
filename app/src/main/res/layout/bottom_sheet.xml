@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select which contact details should we use to \nreset your password"
+        android:textColor="#878787"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_medium"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_70sdp"-->
+<!--        android:background="@drawable/bg"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_marginStart="@dimen/_20sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_20sdp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/whatsapp"-->
+<!--            android:layout_marginStart="@dimen/_20sdp"-->
+<!--            android:layout_gravity="center" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="@dimen/_20sdp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Send via WhatsApp"-->
+<!--                android:textSize="12dp"-->
+<!--                android:textColor="#878787"-->
+<!--                android:fontFamily="@font/inter_regular"-->
+<!--                android:layout_marginTop="@dimen/_15sdp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="+12 3454 5745 57"-->
+<!--                android:textSize="14dp"-->
+<!--                android:textColor="#101010"-->
+<!--                android:fontFamily="@font/inter_medium"-->
+<!--                android:layout_marginTop="@dimen/_12sdp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/s_round"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:tint="#FE8C00"-->
+<!--            android:layout_marginStart="@dimen/_65sdp"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_70sdp"-->
+<!--        android:layout_marginStart="@dimen/_20sdp"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_20sdp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/email1"-->
+<!--            android:layout_marginStart="@dimen/_20sdp"-->
+<!--            android:layout_gravity="center" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="@dimen/_20sdp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Send via Email"-->
+<!--                android:textSize="12dp"-->
+<!--                android:textColor="#878787"-->
+<!--                android:fontFamily="@font/inter_regular"-->
+<!--                android:layout_marginTop="@dimen/_15sdp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Albertstevano@gmail.com"-->
+<!--                android:textSize="14dp"-->
+<!--                android:textColor="#101010"-->
+<!--                android:fontFamily="@font/inter_medium"-->
+<!--                android:layout_marginTop="@dimen/_12sdp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+<!--    -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:text="Send Via Phone Number"
+            android:textSize="12dp"
+            android:textColor="#878787"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:button="@android:color/transparent"
+            android:drawableStart="@drawable/phone"
+            android:padding="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_18sdp"
+            android:background="@drawable/radio_selector"/>
+
+        <RadioButton
+            android:id="@+id/rdEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:text="Send Via Email Address"
+            android:textSize="12dp"
+            android:textColor="#878787"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:drawableStart="@drawable/email"
+            android:padding="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="#FE8C00"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_semibold"/>
+</LinearLayout>
